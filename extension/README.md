@@ -40,7 +40,7 @@ So I decided to make a static version of the homepage. I heavily modified the or
 
 ## Installation
 
-Install the Firefox extension from [addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/gh0stzk-s-homepage/). The extension is prefered because it allows to use the `newtab` page as the homepage and will be updated automatically.
+Install the Firefox extension from [addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/gh0stzk-s-homepage/). The extension is preferred because it allows to use the `newtab` page as the homepage and will be updated automatically.
 
 ### OR
 
@@ -163,7 +163,7 @@ Here is the list of icons included in the extension:
 
 ## More
 
-If you want to keep the color sheme over other pages, you can find the settings for the **Dark-Reader** extension in `./shared/Dark-Reader-Settings.json`:
+If you want to keep the color scheme over other pages, you can find the settings for the **Dark-Reader** extension in `./shared/Dark-Reader-Settings.json`:
 
 * Install the [Dark-Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/) extension if not already installed.
 * Open the extension settings.
