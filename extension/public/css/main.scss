@@ -1,67 +1,67 @@
 // Variables
-@import 'variables';
+@import "variables";
 
 // Main
 * {
-    background-color: transparent !important;
-    margin: 0;
-    padding: 0;
-    // Scrollbar
-    scrollbar-color: var(--homepage-scrollbar);
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    // Text decoration
-    text-decoration: none;
-    // Animation
-    transition: all 0.2s ease-in-out;
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+  // Scrollbar
+  scrollbar-color: var(--homepage-scrollbar);
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  // Text decoration
+  text-decoration: none;
+  // Animation
+  transition: all 0.2s ease-in-out;
 }
 body {
-    background-color: var(--homepage-bg-primary) !important;
-    color: var(--homepage-text-primary);
-    // Full window
-    height: 100%;
-    width: 100%;
-    // Text not selectable
-    user-select: none;
+  background-color: var(--homepage-bg-primary) !important;
+  color: var(--homepage-text-primary);
+  // Full window
+  height: 100%;
+  width: 100%;
+  // Text not selectable
+  user-select: none;
 
-    // Center content
-    display: flex;
-    flex-flow: column;
+  // Center content
+  display: flex;
+  flex-flow: column;
 
-    & > * {
-        margin: 0 auto;
-        width: 80%;
-    }
+  & > * {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 main {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 
-    & > hr {
-        border: 0;
-        border-top: 1px solid rgba(var(--homepage-text-primary-rgb), 1.0);
-        margin: 2rem 0;
-    }
+  & > hr {
+    border: 0;
+    border-top: 1px solid rgba(var(--homepage-text-primary-rgb), 1);
+    margin: 2rem 0;
+  }
 }
 .hide {
-    display: none !important;
+  display: none !important;
 }
 
 // Media - on tablet and PC
 @media (min-width: 768px) {
-    body {
-        & > * {
-            width: 60%;
-        }
+  body {
+    & > * {
+      width: 60%;
     }
+  }
 }
 
 // Navbar
-@import 'nav';
+@import "nav";
 // bookmarks
-@import 'bookmarks';
+@import "bookmarks";
 // feed
-@import 'feed';
+@import "feed";
 // footer
-@import 'footer';
+@import "footer";
 // settings
-@import 'settings';
+@import "settings";

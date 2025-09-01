@@ -1,74 +1,75 @@
 nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 2rem;
+
+  & > * {
+    display: contents;
+  }
+  & > form {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    padding-top: 2rem;
+    justify-content: space-around;
+    background-color: var(--homepage-bg-active) !important;
+    flex: 1;
 
     & > * {
-        display: contents;
+      border: none;
+      padding: 0.5rem;
     }
-    & > form {
-        display: flex;
-        justify-content: space-around;
-        background-color: var(--homepage-bg-active) !important;
-        flex: 1;
+    & > input {
+      color: var(--homepage-text-active);
+      flex: 1;
 
-        & > * {
-            border: none;
-            padding: 0.5rem;
-        }
-        & > input {
-            color: var(--homepage-text-active);
-            flex: 1;
-
-            &::placeholder {
-                color: var(--homepage-text-active);
-                opacity: 1 !important;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
-        & > button {
-            display: flex;
-            align-items: center;
-            fill: var(--homepage-text-active);
-
-            & > img, & > svg {
-                height: 1.5rem;
-                width: 1.5rem;
-            }
-            &:hover {
-                background-color: var(--homepage-bg-focus) !important;
-            }
-            &:focus {
-                outline: none;
-                cursor: pointer;
-            }
-        }
+      &::placeholder {
+        color: var(--homepage-text-active);
+        opacity: 1 !important;
+      }
+      &:focus {
+        outline: none;
+      }
     }
-    & > #time {
-        display: block;
-        font-size: 2rem;
-        font-family: "Lucida Console", Courier, monospace;
-        text-align: center;
+    & > button {
+      display: flex;
+      align-items: center;
+      fill: var(--homepage-text-active);
+
+      & > img,
+      & > svg {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+      &:hover {
+        background-color: var(--homepage-bg-focus) !important;
+      }
+      &:focus {
+        outline: none;
+        cursor: pointer;
+      }
     }
+  }
+  & > #time {
+    display: block;
+    font-size: 2rem;
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: center;
+  }
 }
 
 // Media - on tablet and PC
 @media (min-width: 768px) {
-    nav {
-        flex-direction: row;
-        & > form {
-            width: 30%;
-            // Move to first position
-            order: -1;
-        }
-        & > #time {
-            display: flex;
-            align-items: center;
-            font-size: 1.2rem;
-        }
+  nav {
+    flex-direction: row;
+    & > form {
+      width: 30%;
+      // Move to first position
+      order: -1;
     }
+    & > #time {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+    }
+  }
 }
