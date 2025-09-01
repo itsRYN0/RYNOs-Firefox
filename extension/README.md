@@ -122,6 +122,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/markdown-white.svg" width="50"/> | `markdown-white.svg` |
 | <img src="./public/img/website/materialize.svg" width="50"/> | `materialize.svg` |
 | <img src="./public/img/website/mdn.png" width="50"/> | `mdn.png` |
+| <img src="./public/img/website/messenger.svg" width="50"/> | `messenger.svg` |
 | <img src="./public/img/website/microsoft.svg" width="50"/> | `microsoft.svg` |
 | <img src="./public/img/website/microsoft-azure.svg" width="50"/> | `microsoft-azure.svg` |
 | <img src="./public/img/website/microsoft-teams.svg" width="50"/> | `microsoft-teams.svg` |
