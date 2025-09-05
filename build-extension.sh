@@ -2,16 +2,7 @@
 
 set -e
 
-# Script to automate building of the extension
-
-CWD=$(pwd)
-DEBUG=false
-ARG_1=${1}
-
-# Check if the '-d' flag was given from CLI and set 'DEBUG' mode accordingly
-if [[ "$ARG_1" == "-d" ]]; then
-  DEBUG=true
-fi
+# Script to automate building of the extension, including updating of the semver version
 
 # ANSII colour codes for text output
 NC='\033[0m'
@@ -20,6 +11,34 @@ CYAN='\033[0;36m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 PURPLE='\033[0;34m'
+
+# General variableus
+CWD=$(pwd)
+ARG_0="${0}"
+ARG_1="${1}"
+DEBUG=false
+
+function print_help() {
+  echo -e "${GREEN}USAGE:${NC} ${ARG_0} [OPTIONS]"
+
+  echo -e "\n\t[OPTIONS]\n"
+
+  echo -e "'${BLUE}-d${NC}'\tEnable debug log output"
+  echo -e "'${BLUE}-h${NC}'\tPrint this message and exit"
+  exit 0
+}
+
+# Check if the '-d' flag was given from CLI and set 'DEBUG' mode accordingly
+case "$ARG_1" in
+  "-d")
+    DEBUG=true
+    ;;
+  "-h")
+    print_help
+    ;;
+  *)
+    ;;
+esac
 
 function print_debug() {
   if [ "$DEBUG" == "true" ]; then
@@ -101,7 +120,7 @@ jq ".version |= \"${NEW_VERSION}\"" manifest.json | sponge manifest.json
 # fi
 
 if ! web-ext build; then
-  echo -e "${RED}ERROR:${NC} Failed running the 'web-ext build' command. Exiting with error..."
+  echo -e "${RED}ERROR:${NC} Failed running '${GREEN}web-ext build${NC}' command. Exiting with error..."
   exit_func 1
 fi
 
