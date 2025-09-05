@@ -1,3 +1,4 @@
+extension/web-ext-artifacts/*
 /example/
 *.map
 *.zip
