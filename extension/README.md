@@ -95,6 +95,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/canal-plus-white.svg" width="50"/> | `canal-plus-white.svg` |
 | <img src="./public/img/website/cardmarket.svg" width="50"/> | `cardmarket.svg` |
 | <img src="./public/img/website/cesi.svg" width="50"/> | `cesi.svg` |
+| <img src="./public/img/website/crunchyrole.svg" width="50"/> | `crunchyrole.svg` |
 | <img src="./public/img/website/davensi.svg" width="50"/> | `davensi.svg` |
 | <img src="./public/img/website/davensi-white.svg" width="50"/> | `davensi-white.svg` |
 | <img src="./public/img/website/debian.svg" width="50"/> | `debian.svg` |
@@ -144,6 +145,7 @@ Here is the list of icons included in the extension:
 | <img src="./public/img/website/proton-pass.svg" width="50"/> | `proton-pass.svg` |
 | <img src="./public/img/website/protondb.svg" width="50"/> | `protondb.svg` |
 | <img src="./public/img/website/redhat.svg" width="50"/> | `redhat.svg` |
+| <img src="./public/img/website/regex101.png" width="50"/> | `regex101.png` |
 | <img src="./public/img/website/router.svg" width="50"/> | `router.svg` |
 | <img src="./public/img/website/slack.svg" width="50"/> | `slack.svg` |
 | <img src="./public/img/website/synaps.svg" width="50"/> | `synaps.svg` |
