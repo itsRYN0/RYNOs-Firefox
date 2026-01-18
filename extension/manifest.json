@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "RYNO's homepage",
   "short_name": "RYNO's homepage",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "A custom homepage for your browser (color scheme by gh0stzk)",
   "author": "itsRYN0",
   "homepage_url": "https://github.com/itsRYN0",
@@ -31,7 +31,10 @@
   "permissions": ["storage", "webRequest", "webRequestBlocking", "<all_urls>"],
   "browser_specific_settings": {
     "gecko": {
-      "id": "ryno-s-firefox@example.com"
+      "id": "ryno-s-firefox@example.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
